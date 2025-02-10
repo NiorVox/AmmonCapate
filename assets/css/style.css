@@ -1,0 +1,358 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:100');
+
+html,
+body {
+  font-family: 'Roboto Mono', monospace;
+  margin: 0px !important;
+  height: 100%;
+  width: 100%;
+}
+
+.container {
+  /* background-color: #0a0a0a !important; */
+  background-color: #000000;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25'%3E%3Cdefs%3E%3ClinearGradient id='a' gradientUnits='userSpaceOnUse' x1='0' x2='0' y1='0' y2='100%25' gradientTransform='rotate(172,960,484)'%3E%3Cstop offset='0' stop-color='%23000000'/%3E%3Cstop offset='1' stop-color='%2301000D'/%3E%3C/linearGradient%3E%3Cpattern patternUnits='userSpaceOnUse' id='b' width='300' height='250' x='0' y='0' viewBox='0 0 1080 900'%3E%3Cg fill-opacity='0.01'%3E%3Cpolygon fill='%23444' points='90 150 0 300 180 300'/%3E%3Cpolygon points='90 150 180 0 0 0'/%3E%3Cpolygon fill='%23AAA' points='270 150 360 0 180 0'/%3E%3Cpolygon fill='%23DDD' points='450 150 360 300 540 300'/%3E%3Cpolygon fill='%23999' points='450 150 540 0 360 0'/%3E%3Cpolygon points='630 150 540 300 720 300'/%3E%3Cpolygon fill='%23DDD' points='630 150 720 0 540 0'/%3E%3Cpolygon fill='%23444' points='810 150 720 300 900 300'/%3E%3Cpolygon fill='%23FFF' points='810 150 900 0 720 0'/%3E%3Cpolygon fill='%23DDD' points='990 150 900 300 1080 300'/%3E%3Cpolygon fill='%23444' points='990 150 1080 0 900 0'/%3E%3Cpolygon fill='%23DDD' points='90 450 0 600 180 600'/%3E%3Cpolygon points='90 450 180 300 0 300'/%3E%3Cpolygon fill='%23666' points='270 450 180 600 360 600'/%3E%3Cpolygon fill='%23AAA' points='270 450 360 300 180 300'/%3E%3Cpolygon fill='%23DDD' points='450 450 360 600 540 600'/%3E%3Cpolygon fill='%23999' points='450 450 540 300 360 300'/%3E%3Cpolygon fill='%23999' points='630 450 540 600 720 600'/%3E%3Cpolygon fill='%23FFF' points='630 450 720 300 540 300'/%3E%3Cpolygon points='810 450 720 600 900 600'/%3E%3Cpolygon fill='%23DDD' points='810 450 900 300 720 300'/%3E%3Cpolygon fill='%23AAA' points='990 450 900 600 1080 600'/%3E%3Cpolygon fill='%23444' points='990 450 1080 300 900 300'/%3E%3Cpolygon fill='%23222' points='90 750 0 900 180 900'/%3E%3Cpolygon points='270 750 180 900 360 900'/%3E%3Cpolygon fill='%23DDD' points='270 750 360 600 180 600'/%3E%3Cpolygon points='450 750 540 600 360 600'/%3E%3Cpolygon points='630 750 540 900 720 900'/%3E%3Cpolygon fill='%23444' points='630 750 720 600 540 600'/%3E%3Cpolygon fill='%23AAA' points='810 750 720 900 900 900'/%3E%3Cpolygon fill='%23666' points='810 750 900 600 720 600'/%3E%3Cpolygon fill='%23999' points='990 750 900 900 1080 900'/%3E%3Cpolygon fill='%23999' points='180 0 90 150 270 150'/%3E%3Cpolygon fill='%23444' points='360 0 270 150 450 150'/%3E%3Cpolygon fill='%23FFF' points='540 0 450 150 630 150'/%3E%3Cpolygon points='900 0 810 150 990 150'/%3E%3Cpolygon fill='%23222' points='0 300 -90 450 90 450'/%3E%3Cpolygon fill='%23FFF' points='0 300 90 150 -90 150'/%3E%3Cpolygon fill='%23FFF' points='180 300 90 450 270 450'/%3E%3Cpolygon fill='%23666' points='180 300 270 150 90 150'/%3E%3Cpolygon fill='%23222' points='360 300 270 450 450 450'/%3E%3Cpolygon fill='%23FFF' points='360 300 450 150 270 150'/%3E%3Cpolygon fill='%23444' points='540 300 450 450 630 450'/%3E%3Cpolygon fill='%23222' points='540 300 630 150 450 150'/%3E%3Cpolygon fill='%23AAA' points='720 300 630 450 810 450'/%3E%3Cpolygon fill='%23666' points='720 300 810 150 630 150'/%3E%3Cpolygon fill='%23FFF' points='900 300 810 450 990 450'/%3E%3Cpolygon fill='%23999' points='900 300 990 150 810 150'/%3E%3Cpolygon points='0 600 -90 750 90 750'/%3E%3Cpolygon fill='%23666' points='0 600 90 450 -90 450'/%3E%3Cpolygon fill='%23AAA' points='180 600 90 750 270 750'/%3E%3Cpolygon fill='%23444' points='180 600 270 450 90 450'/%3E%3Cpolygon fill='%23444' points='360 600 270 750 450 750'/%3E%3Cpolygon fill='%23999' points='360 600 450 450 270 450'/%3E%3Cpolygon fill='%23666' points='540 600 630 450 450 450'/%3E%3Cpolygon fill='%23222' points='720 600 630 750 810 750'/%3E%3Cpolygon fill='%23FFF' points='900 600 810 750 990 750'/%3E%3Cpolygon fill='%23222' points='900 600 990 450 810 450'/%3E%3Cpolygon fill='%23DDD' points='0 900 90 750 -90 750'/%3E%3Cpolygon fill='%23444' points='180 900 270 750 90 750'/%3E%3Cpolygon fill='%23FFF' points='360 900 450 750 270 750'/%3E%3Cpolygon fill='%23AAA' points='540 900 630 750 450 750'/%3E%3Cpolygon fill='%23FFF' points='720 900 810 750 630 750'/%3E%3Cpolygon fill='%23222' points='900 900 990 750 810 750'/%3E%3Cpolygon fill='%23222' points='1080 300 990 450 1170 450'/%3E%3Cpolygon fill='%23FFF' points='1080 300 1170 150 990 150'/%3E%3Cpolygon points='1080 600 990 750 1170 750'/%3E%3Cpolygon fill='%23666' points='1080 600 1170 450 990 450'/%3E%3Cpolygon fill='%23DDD' points='1080 900 1170 750 990 750'/%3E%3C/g%3E%3C/pattern%3E%3C/defs%3E%3Crect x='0' y='0' fill='url(%23a)' width='100%25' height='100%25'/%3E%3Crect x='0' y='0' fill='url(%23b)' width='100%25' height='100%25'/%3E%3C/svg%3E");
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.text {
+  font-weight: 100;
+  font-size: 25px;
+  color: #ffffff;
+}
+
+.splash {
+  cursor: pointer;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0);
+  transition: all ease-in-out 600ms;
+}
+
+.hidden {
+  transition: 0.5s;
+  display: none;
+}
+
+.kmf:hover {
+  transform: translateX(10px);
+}
+
+/***************** Generic Elements */
+.z-999 {
+  z-index: 999 !important;
+}
+
+.z-10 {
+  z-index: 10 !important;
+}
+
+.z-1 {
+  z-index: 1 !important;
+}
+
+.hdn {
+  display: none;
+}
+
+/***************** colors */
+.clr-w {
+  color: #fff;
+}
+
+/***************** Shadows */
+.tshdw-70p {
+  text-shadow: 1px 3px 5px #0000007a !important;
+}
+
+/***************** Font Weight */
+.fw-l {
+  font-weight: 200;
+}
+
+.fw-bld {
+  font-weight: 400;
+}
+
+.fw-bldr {
+  font-weight: 600;
+}
+
+.fw-hvy {
+  font-weight: 800;
+}
+
+/***************** Font Size */
+.fs-12 {
+  font-size: 12px;
+}
+
+.fs-14 {
+  font-size: 14px;
+}
+
+.fs-18 {
+  font-size: 18px;
+}
+
+.fs-20 {
+  font-size: 20px;
+}
+
+.fs-22 {
+  font-size: 22px;
+}
+
+.fs-24 {
+  font-size: 24px;
+}
+
+.fs-26 {
+  font-size: 26px;
+}
+
+/***************** Widths */
+
+.nw-100p {
+  width: 100%;
+}
+
+.nw-25 {
+  width: 25px;
+}
+
+.nw-865 {
+  width: 865px;
+}
+
+.nw-500 {
+  width: 500px;
+}
+
+.nw-600 {
+  width: 600px;
+}
+
+.nw-650 {
+  width: 650px !important;
+}
+
+.nw-750 {
+  width: 750px !important;
+}
+
+/***************** Heights */
+.nh-100p {
+  height: 100%;
+}
+
+.nh-20 {
+  height: 20px;
+}
+
+.nh-25 {
+  height: 25px;
+}
+
+.nh-350 {
+  height: 350px;
+}
+
+.nh-400 {
+  height: 400px;
+}
+
+.nh-450 {
+  height: 450px !important;
+}
+
+.nh-600 {
+  height: 600px !important;
+}
+
+/***************** Borders */
+.brdrbd-1 {
+  border-bottom: dashed 1px #fff2;
+}
+
+/***************** Flexbox */
+
+.flx {
+  display: flex;
+}
+
+.sb {
+  justify-content: space-between;
+}
+
+.fs {
+  justify-content: flex-start;
+}
+
+.ctr {
+  justify-content: center;
+}
+
+/***************** Buttons */
+.abtn {
+  padding: 0px;
+  background-color: #f0f8ff00;
+  border: none;
+  opacity: .5;
+}
+
+.abtn:hover {
+  opacity: 1;
+}
+
+/***************** Alignments */
+.tar {
+  text-align: right;
+}
+
+.tac {
+  text-align: center;
+}
+
+.tal {
+  text-align: left;
+}
+
+/***************** Margins */
+.mgnr-10 {
+  margin-right: 10px;
+}
+
+.mgnr-15 {
+  margin-right: 15px;
+}
+
+.mgnr-30 {
+  margin-right: 30px;
+}
+
+.mgnt-15 {
+  margin-top: 15px;
+}
+
+
+.mgnt-30 {
+  margin-top: 30px;
+}
+
+.mgnt-100 {
+  margin-top: 100px;
+}
+
+/***************** Paddings */
+.pdt-5 {
+  padding-top: 5px;
+}
+
+.pd-15 {
+  padding: 15px;
+}
+
+.pdrl-40 {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+/***************** Paddings */
+.fnt-l {
+  font-weight: 200;
+}
+
+.mouse-bg {
+  position: relative;
+}
+
+
+.swiper {
+  width: 1000px;
+  height: 700px;
+}
+
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  border: none;
+  font-size: 22px;
+  font-weight: bold;
+
+}
+
+.s1bc {
+  background-image: url("assets/img/sld1.jpg");
+  background: #000428;
+  background: -webkit-linear-gradient(to right, #004e92, #000428);
+  background: linear-gradient(to right, #004e92, #000428);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.swiper-slide:nth-child(1n) {
+  background-color: rgb(26, 26, 26);
+}
+
+.swiper-slide:nth-child(2n) {
+  background-color: rgb(26, 26, 26);
+}
+
+.swiper-slide:nth-child(3n) {
+  background-color: rgb(26, 26, 26);
+}
+
+.swiper-slide:nth-child(4n) {
+  background-color: rgb(26, 26, 26);
+}
+
+.swiper-slide:nth-child(5n) {
+  background-color: rgb(26, 26, 26);
+}
+
+.swiper-slide:nth-child(6n) {
+  background-color: rgb(26, 26, 26);
+}
+
+.swiper-slide:nth-child(7n) {
+  background-color: rgb(26, 26, 26);
+}
+
+
+.swiper2 {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.abslt {
+  position: absolute;
+}
+
+.opcty-4 {
+  opacity: .4;
+}
