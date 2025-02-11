@@ -1466,7 +1466,7 @@ body {
   font-weight: 700;
 }
 
-.hire {
+.hire, .creation {
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1488,12 +1488,12 @@ body {
 }
 
 @media (max-width: 1180px) {
-  .hire {
+  .hire, .creation {
     max-width: 90%
   }
 }
 
-.hire h2 {
+.hire h2, .creation {
   margin: 0 0 20px 0;
   font-size: 30px;
   text-align: center;

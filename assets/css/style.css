@@ -298,6 +298,10 @@ body {
   justify-content: center;
 }
 
+.fd-c {
+  flex-direction: column;
+}
+
 .tal {
   text-align: left !important;
 }
