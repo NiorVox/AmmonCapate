@@ -98,6 +98,10 @@ body {
   background-color: rgb(0 0 0 / 80%) !important;
 }
 
+.bclr-t {
+  background-color: rgb(0 0 0 / 0%) !important;
+}
+
 /***************** Generic Elements */
 .mui {
   display: none !important;
@@ -194,8 +198,16 @@ body {
   width: 100% !important;
 }
 
+.nw-90p {
+  width: 90% !important;
+}
+
 .nw-25 {
   width: 25px;
+}
+
+.nw-55 {
+  width: 55px !important;
 }
 
 .nw-350 {
@@ -233,6 +245,10 @@ body {
 
 .nh-25 {
   height: 25px;
+}
+
+.nh-55 {
+  height: 55px !important;
 }
 
 .nh-350 {
@@ -366,12 +382,24 @@ body {
   padding-top: 5px;
 }
 
+.pdt-10 {
+  padding-top: 10px;
+}
+
 .pd-15 {
   padding: 15px;
 }
 
+.pd-5 {
+  padding: 5px;
+}
+
 .pd-45 {
   padding: 45px;
+}
+
+.pdl-45 {
+  padding-left: 45px;
 }
 
 .pdrl-40 {
