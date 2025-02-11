@@ -1,0 +1,10 @@
+@media only screen and (max-width: 829px) and (min-width: 50px) {
+
+    .mui {
+        display: block !important;
+    }
+
+    .mhdn {
+        display: none !important;
+    }
+}

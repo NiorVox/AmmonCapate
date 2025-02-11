@@ -8,6 +8,15 @@ body {
   width: 100%;
 }
 
+:root {
+  --swiper-navigation-size: 25px !important;
+  --swiper-theme-color: #ffffff !important;
+}
+
+.swiper-pagination-bullet {
+  background: #313131 !important;
+}
+
 .container {
   /* background-color: #0a0a0a !important; */
   background-color: #000000;
@@ -19,6 +28,23 @@ body {
   justify-content: center;
   align-items: center;
   display: flex;
+}
+
+.container2,
+.container1 {
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+.parallax-image2 {
+  width: 110%;
+  height: 110%;
+  object-fit: cover;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .text {
@@ -36,6 +62,10 @@ body {
   transition: all ease-in-out 600ms;
 }
 
+#foreground {
+  width: 100% !important;
+}
+
 .hidden {
   transition: 0.5s;
   display: none;
@@ -45,7 +75,39 @@ body {
   transform: translateX(10px);
 }
 
+.abslt {
+  position: absolute;
+}
+
+.hvr-shw {
+  opacity: 0;
+}
+
+.hvr-shw:hover {
+  transition: 0.5s;
+  opacity: 1;
+}
+
+.crsr-pntr {
+  cursor: pointer;
+}
+
+/***************** Background Colors */
+
+.bclr-blk8 {
+  background-color: rgb(0 0 0 / 80%) !important;
+}
+
 /***************** Generic Elements */
+.mui {
+  display: none !important;
+}
+
+.mhdn {
+  display: block !important;
+}
+
+
 .z-999 {
   z-index: 999 !important;
 }
@@ -77,6 +139,10 @@ body {
   font-weight: 200;
 }
 
+.fw-mid {
+  font-weight: 300;
+}
+
 .fw-bld {
   font-weight: 400;
 }
@@ -96,6 +162,10 @@ body {
 
 .fs-14 {
   font-size: 14px;
+}
+
+.fs-16 {
+  font-size: 16px;
 }
 
 .fs-18 {
@@ -121,11 +191,15 @@ body {
 /***************** Widths */
 
 .nw-100p {
-  width: 100%;
+  width: 100% !important;
 }
 
 .nw-25 {
   width: 25px;
+}
+
+.nw-350 {
+  width: 350px !important;
 }
 
 .nw-865 {
@@ -150,7 +224,7 @@ body {
 
 /***************** Heights */
 .nh-100p {
-  height: 100%;
+  height: 100% !important;
 }
 
 .nh-20 {
@@ -162,7 +236,7 @@ body {
 }
 
 .nh-350 {
-  height: 350px;
+  height: 350px !important;
 }
 
 .nh-400 {
@@ -182,6 +256,14 @@ body {
   border-bottom: dashed 1px #fff2;
 }
 
+.brdr-r10 {
+  border-radius: 10px;
+}
+
+/***************** Line Height*/
+.lh-18 {
+  line-height: 1.8;
+}
 /***************** Flexbox */
 
 .flx {
@@ -198,6 +280,30 @@ body {
 
 .ctr {
   justify-content: center;
+}
+
+.tal {
+  text-align: left !important;
+}
+
+.bt-0 {
+  bottom: 0;
+}
+
+.bt-100 {
+  bottom: 100px;
+}
+
+.bt-115 {
+  bottom: 115px;
+}
+
+.rt-0 {
+  right: 0;
+}
+
+.lf-115 {
+  left: 115px;
 }
 
 /***************** Buttons */
@@ -238,6 +344,10 @@ body {
   margin-right: 30px;
 }
 
+.mgnt-10 {
+  margin-top: 10px;
+}
+
 .mgnt-15 {
   margin-top: 15px;
 }
@@ -258,6 +368,10 @@ body {
 
 .pd-15 {
   padding: 15px;
+}
+
+.pd-45 {
+  padding: 45px;
 }
 
 .pdrl-40 {
