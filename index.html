@@ -280,7 +280,7 @@
                           </div>
                           <div class="abslt bt-115 info-box tal">
                             <div class="fs-20 fw-mid">Prototyping Ui/Ux</div>
-                            <div class="fs-14 fw-mid lh-18 mgnt-15">6+ years of experience in UI/UX design, mastering
+                            <div class="fs-14 fw-mid lh-18 mgnt-15">10+ years of experience in UI/UX design & 6+ years mastering
                               Figma and Adobe XD as my primary tools. Over the years, I have also explored various
                               lesser-known prototyping and design tools, continuously expanding my skill set and
                               adaptability.</div>
@@ -507,20 +507,6 @@
                                   humanity itself. </div>
                               </div>
                             </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
                           </div>
                           <div class="swiper-pagination"></div>
                           <div class="swiper-button-next"></div>
@@ -587,6 +573,7 @@
 <script type="text/javascript" src="assets/js/jquery.js"></script>
 <script src="assets/js/functions-min.js"></script>
 <script>
+
   document.addEventListener("DOMContentLoaded", function () {
     const progressBars = document.querySelectorAll(".progress-bar");
 
@@ -594,9 +581,10 @@
       entries.forEach(entry => {
         if (entry.isIntersecting) {
           let bar = entry.target;
-          let percentage = bar.getAttribute("data-percentage");
-          bar.style.setProperty("--target-width", percentage + "%");
-          bar.style.animation = "fillProgress 2s ease-in-out forwards";
+          let percentage = parseInt(bar.getAttribute("data-percentage"));
+          let percentageText = bar.closest(".flx").querySelector(".percentage");
+
+          animateProgress(bar, percentage, percentageText);
           observer.unobserve(bar); // Stop observing once animated
         }
       });
@@ -605,6 +593,24 @@
     progressBars.forEach(bar => {
       observer.observe(bar);
     });
+
+    function animateProgress(bar, targetPercentage, percentageText) {
+      let counter = 0;
+      let duration = 2000; // Animation duration in milliseconds
+      let intervalTime = duration / targetPercentage; // Adjust timing dynamically
+
+      let interval = setInterval(() => {
+        percentageText.textContent = counter + "%"; // Update text
+
+        if (counter >= targetPercentage) {
+          clearInterval(interval);
+        } else {
+          counter++;
+        }
+      }, intervalTime);
+
+      bar.style.width = targetPercentage + "%"; // Animate progress bar
+    }
   });
 
 
@@ -640,7 +646,7 @@
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
-    },navigation: {
+    }, navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
     },
