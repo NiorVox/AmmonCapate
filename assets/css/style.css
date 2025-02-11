@@ -223,7 +223,7 @@ body {
 }
 
 .nw-600 {
-  width: 600px;
+  width: 600px !important;
 }
 
 .nw-650 {
