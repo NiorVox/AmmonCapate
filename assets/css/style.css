@@ -210,6 +210,10 @@ body {
   width: 55px !important;
 }
 
+.nw-65 {
+  width: 65px !important;
+}
+
 .nw-350 {
   width: 350px !important;
 }
@@ -249,6 +253,10 @@ body {
 
 .nh-55 {
   height: 55px !important;
+}
+
+.nh-65 {
+  height: 65px !important;
 }
 
 .nh-350 {
