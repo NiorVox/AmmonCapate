@@ -7,4 +7,75 @@
     .mhdn {
         display: none !important;
     }
+
+    .mnw-100p {
+        width: 100% !important;
+    }
+
+    .mnw-90p {
+        width: 90% !important;
+    }
+
+    .mmgn-0 {
+        margin: 0 !important;
+    }
+
+    .mmgnl-15 {
+        margin-left: 15px !important;
+    }
+
+    .mmgnt-0 {
+        margin-top: 0px !important;
+    }
+
+    .mxw-0 {
+        max-width: unset !important;
+    }
+
+    .mbtn-0 {
+        bottom: 30px !important;
+    }
+
+    .info-box {
+        bottom: 30px !important;
+    }
+
+    .skill-card {
+        display: flex !important;
+        justify-content: flex-start !important;
+        width: 215px !important;
+        margin-left: 25px !important;
+    }
+
+    .skills-icon {
+        width: 50px !important;
+        height: 50px !important;
+        margin-top: 0px !important;
+        margin-left: -45px !important;
+        margin-bottom: 0px !important;
+    }
+
+    .skills-container {
+        margin-top: 180px !important;
+    }
+
+    .mfs-10 {
+        font-size: 10px !important;
+    }
+
+    .mfs-12 {
+        font-size: 12px !important;
+    }
+
+    .mfs-14 {
+        font-size: 14px !important;
+    }
+
+    .mfs-16 {
+        font-size: 16px !important;
+    }
+
+    .mtal {
+        text-align: left !important;
+    }
 }

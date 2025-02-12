@@ -1905,8 +1905,8 @@ body {
 .skills-icon{
   border: 1px solid #6a0dad;
   border-radius: 15px;
-  width: 90px !important;
-  height: 90px !important;
+  width: 90px;
+  height: 90px;
   margin-top: -30px;
   margin-bottom: 20px;
 }
