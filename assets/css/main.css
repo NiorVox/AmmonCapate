@@ -1488,8 +1488,12 @@ body {
 }
 
 @media (max-width: 1180px) {
-  .hire, .creation {
+   .creation {
     max-width: 90%
+  }
+
+  .hire {
+    max-width: 100%
   }
 }
 
