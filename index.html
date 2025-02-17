@@ -268,6 +268,9 @@
                         </div>
 
                       </div>
+
+
+
                       <div class="swiper-slide bclr-t">
                         <div class="flx ctr">
                           <div class="abslt skills-container">
@@ -678,11 +681,40 @@
               <li class="l-section section">
                 <div class="about">
                   <div class="flx ctr fd-c">
-                    <div class="fs-16">All of my work is showcased here.</div>
-                    <div class="fs-14 fw-mid">Thank you for your interest! Due to the confidentiality of my work, I’m
-                      currently seeking permission from my clients before sharing commissioned projects. Once I have
-                      their approval, I’ll be happy to showcase them in my portfolio. Let me know if there’s anything
-                      specific you’d like to discuss!</div>
+                    <div class="swiper mySwipergallery">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                          <div>Works Here</div>
+                          <button>Test Modal</button>
+                          <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="https://swiperjs.com/demos/images/nature-9.jpg" />
+                        </div>
+                      </div>
+                      <div class="swiper-pagination"></div>
+                    </div>
                   </div>
                 </div>
               </li>
@@ -707,6 +739,23 @@
 <script type="text/javascript" src="assets/js/jquery.js"></script>
 <script src="assets/js/functions-min.js"></script>
 <script>
+
+  var swiper = new Swiper(".mySwipergallery", {
+    effect: "coverflow",
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: "auto",
+    coverflowEffect: {
+      rotate: 50,
+      stretch: 0,
+      depth: 100,
+      modifier: 1,
+      slideShadows: true,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+    },
+  });
 
   document.addEventListener("DOMContentLoaded", function () {
     const progressBars = document.querySelectorAll(".progress-bar");
